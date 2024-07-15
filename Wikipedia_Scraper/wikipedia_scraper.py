@@ -17,11 +17,8 @@ def scrapeWikiArticle(url):
 	linkToScrape = 0
 
 	for link in allLinks:
-		# We are only interested in other wiki articles
 		if link['href'].find("/wiki/") == -1: 
 			continue
-
-		# Use this link to scrape
 		linkToScrape = link
 		break
 
